@@ -1,0 +1,26 @@
+{
+  "name": "ai.algoritme.io",
+  "version": "1.0.0",
+  "description": "simple tesseract ocr api testing (upload image, response with possible text recognition)",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "node-tesseract-ocr": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olealgoritme/tesseract_ocr_api.git"
+  },
+  "author": "Ole Algoritme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olealgoritme/tesseract_ocr_api/issues"
+  },
+  "homepage": "https://github.com/olealgoritme/tesseract_ocr_api#readme"
+}

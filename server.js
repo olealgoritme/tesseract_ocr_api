@@ -7,8 +7,9 @@ const express = require('express')
 const app = express();
 const router = express.Router()
 
-const multer  = require('multer');
+const multer  = require('multer')
 const upload = multer({ dest: './uploads/' })
+//const phone = require('./phone_calls.js')
 
 const tesseract = require("node-tesseract-ocr")
 const ocr_config = {
@@ -31,7 +32,7 @@ const credentials = {
 
 // Default route
 app.use(router, (req, res) => {
-	res.send('algoritme.io AI Server -xuw')
+	res.send('ai.algoritme.io API Server -@olealgoritme')
 })
 
 /**

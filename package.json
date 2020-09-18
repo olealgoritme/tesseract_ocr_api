@@ -4,7 +4,9 @@
   "description": "simple tesseract ocr api testing (upload image, response with possible text recognition)",
   "main": "server.js",
   "dependencies": {
+    "asterisk-manager": "^0.1.16",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "multer": "^1.4.2",
     "node-tesseract-ocr": "^2.0.0"
   },

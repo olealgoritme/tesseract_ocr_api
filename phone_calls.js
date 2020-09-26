@@ -1,5 +1,5 @@
 const fs = require('fs');
-const ami = require('asterisk-manager')('5038','localhost','xuwadmin','901vaR3R123-', true);
+const ami = require('asterisk-manager')('5038','localhost','admin','secretPassword-', true);
 ami.keepConnected(); // in case of connectivity problems
 
 console.log("Connected to AMI");

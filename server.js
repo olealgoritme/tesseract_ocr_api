@@ -19,14 +19,16 @@ const ocr_config = {
 const SSL_ENABLED = false;
 
 // SSL Certificate
-const privateKey  = fs.readFileSync('./certs/privkey.pem', 'utf8')
-const certificate = fs.readFileSync('./certs/cert.pem', 'utf8')
-const ca          = fs.readFileSync('./certs/chain.pem', 'utf8')
+if (SSL_ENABLED) {
+  const privateKey  = fs.readFileSync('./certs/privkey.pem', 'utf8')
+  const certificate = fs.readFileSync('./certs/cert.pem', 'utf8')
+  const ca          = fs.readFileSync('./certs/chain.pem', 'utf8')
 
-const credentials = {
-    key: privateKey,
-    cert: certificate,
-    ca: ca
+  const credentials = {
+      key: privateKey,
+      cert: certificate,
+      ca: ca
+  }
 }
 
 app.use(morgan('combined'))

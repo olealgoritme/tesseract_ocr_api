@@ -11,4 +11,3 @@ convert servicetag.jpg -fuzz 50% \
 -units pixelsperinch \
 -density 72 \
  output.jpg
-
